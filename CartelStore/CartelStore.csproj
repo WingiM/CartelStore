@@ -120,7 +120,6 @@
       <DependentUpon>AppModel.edmx</DependentUpon>
     </None>
     <None Include="App.config" />
-    <None Include="App.user.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
