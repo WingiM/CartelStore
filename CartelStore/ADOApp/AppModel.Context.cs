@@ -16,7 +16,7 @@ namespace CartelStore.ADOApp
     public partial class CartelStoreEntities : DbContext
     {
         public CartelStoreEntities()
-            : base("name=CartelStoreEntities")
+            : base("name=CartelStoreEntitiesBulat")
         {
         }
     
