@@ -1,0 +1,41 @@
+﻿<Page x:Class="CartelStore.Pages.Auth"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:CartelStore.Pages"
+      mc:Ignorable="d"
+      Title="Auth" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <StackPanel>
+                <TextBlock>
+                    Login
+                </TextBlock>
+                <TextBox x:Name="Login"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock>
+                    Password
+                </TextBlock>
+                <PasswordBox x:Name="PasswordBox"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:Name="Sign" Content="Sign"/>
+                <Button x:Name="Registrate" Click="Registrate_OnClick" Content="Registration"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

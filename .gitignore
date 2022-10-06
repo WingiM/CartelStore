@@ -1,0 +1,6 @@
+﻿.vs/
+.idea/
+bin/
+obj/
+App.user.config
+CartelStore.sln.DotSettings.user
