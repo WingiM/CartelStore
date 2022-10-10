@@ -33,7 +33,7 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button x:Name="Sign" Content="Sign"/>
+                <Button x:Name="Sign" Content="Sign" Click="Sign_Click"/>
                 <Button x:Name="Registrate" Click="Registrate_OnClick" Content="Registration"/>
             </StackPanel>
         </StackPanel>

@@ -15,12 +15,6 @@ namespace CartelStore
         {
             InitializeComponent();
             MainFrame.Navigate(new Auth());
-
-            var res = CartelStoreConnection.Connection.Users.Where(x => x.Id > 1);
-            foreach (var user in res)
-            {
-                MessageBox.Show(user.Name);
-            }
         }
     }
 }

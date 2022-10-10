@@ -63,22 +63,39 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="ADOApp\AppModel.Context.cs">
+    <Compile Include="ADOApp\CartelStoreModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AppModel.Context.tt</DependentUpon>
+      <DependentUpon>CartelStoreModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="ADOApp\AppModel.Designer.cs">
+    <Compile Include="ADOApp\CartelStoreModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AppModel.edmx</DependentUpon>
+      <DependentUpon>CartelStoreModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="ADOApp\Jewelry.cs" />
-    <Compile Include="ADOApp\LoginInfo.cs" />
-    <Compile Include="ADOApp\Order.cs" />
-    <Compile Include="ADOApp\Product.cs" />
-    <Compile Include="ADOApp\Role.cs" />
-    <Compile Include="ADOApp\User.cs" />
+    <Compile Include="ADOApp\CartelStoreModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CartelStoreModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ADOApp\Jewelry.cs">
+      <DependentUpon>CartelStoreModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADOApp\LoginInfo.cs">
+      <DependentUpon>CartelStoreModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADOApp\Order.cs">
+      <DependentUpon>CartelStoreModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADOApp\Product.cs">
+      <DependentUpon>CartelStoreModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADOApp\Role.cs">
+      <DependentUpon>CartelStoreModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADOApp\User.cs">
+      <DependentUpon>CartelStoreModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -112,23 +129,26 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="ADOApp\AppModel.edmx">
+    <EntityDeploy Include="ADOApp\CartelStoreModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>AppModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>CartelStoreModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="ADOApp\AppModel.edmx.diagram">
-      <DependentUpon>AppModel.edmx</DependentUpon>
+    <None Include="ADOApp\CartelStoreModel.edmx.diagram">
+      <DependentUpon>CartelStoreModel.edmx</DependentUpon>
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Database\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="ADOApp\AppModel.Context.tt">
+    <Content Include="ADOApp\CartelStoreModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>AppModel.Context.cs</LastGenOutput>
+      <DependentUpon>CartelStoreModel.edmx</DependentUpon>
+      <LastGenOutput>CartelStoreModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ADOApp\CartelStoreModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CartelStoreModel.edmx</DependentUpon>
+      <LastGenOutput>CartelStoreModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

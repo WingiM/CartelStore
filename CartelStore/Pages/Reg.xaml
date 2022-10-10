@@ -35,12 +35,12 @@
                 <TextBlock>
                     Password
                 </TextBlock>
-                <PasswordBox x:Name="PasswordBox"/>
+                <PasswordBox x:Name="PasswordBox" />
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <Button x:Name="Reverse" Content="reverse" Click="Reverse_OnClick"/>
-                <Button x:Name="Registrate" Content="Registration"/>
+                <Button x:Name="Registrate" Content="Registration" Click="Registrate_OnClick"/>
             </StackPanel>
         </StackPanel>
     </Grid>

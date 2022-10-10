@@ -13,9 +13,9 @@ namespace CartelStore.ADOApp
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CartelStoreEntities : DbContext
+    public partial class CartelStoreEntitiesBulat : DbContext
     {
-        public CartelStoreEntities()
+        public CartelStoreEntitiesBulat()
             : base("name=CartelStoreEntitiesBulat")
         {
         }
@@ -25,11 +25,11 @@ namespace CartelStore.ADOApp
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Jewelry> Jewelries { get; set; }
-        public virtual DbSet<Order> Orders { get; set; }
-        public virtual DbSet<Product> Products { get; set; }
-        public virtual DbSet<Role> Roles { get; set; }
-        public virtual DbSet<User> Users { get; set; }
-        public virtual DbSet<LoginInfo> LoginInfoes { get; set; }
+        public virtual DbSet<Jewelry> Jewelry { get; set; }
+        public virtual DbSet<LoginInfo> LoginInfo { get; set; }
+        public virtual DbSet<Order> Order { get; set; }
+        public virtual DbSet<Product> Product { get; set; }
+        public virtual DbSet<Role> Role { get; set; }
+        public virtual DbSet<User> User { get; set; }
     }
 }

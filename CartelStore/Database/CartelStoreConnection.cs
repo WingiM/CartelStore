@@ -4,7 +4,7 @@ namespace CartelStore.Database
 {
     public static class CartelStoreConnection
     {
-        private static CartelStoreEntities _context = new CartelStoreEntities();
-        public static CartelStoreEntities Connection => _context;
+        private static CartelStoreEntitiesBulat _context = new CartelStoreEntitiesBulat();
+        public static CartelStoreEntitiesBulat Connection => _context;
     }
 }

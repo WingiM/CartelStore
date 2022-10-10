@@ -17,6 +17,7 @@ namespace CartelStore.ADOApp
         public Nullable<int> UserId { get; set; }
         public string Login { get; set; }
         public string Password { get; set; }
+        public int Id { get; set; }
     
         public virtual User User { get; set; }
     }
